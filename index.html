@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Tempo de Viagem</title>
+    <style>
+        .corpo{
+            background-color: #cecece;
+            width: 700px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 10px black;
+            padding: 1em;
+        }
+        .form{
+            display: block;
+            margin: 1em;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="corpo">
+        <h1>Planejamento de viagem</h1>
+        <form class="travelForm">
+            <div class="form">
+                <label for="distance">Distância (em quilômetros):</label><br>
+                <input type="number" id="distance" required>
+            </div>
+
+            <div class="form">
+                <label for="averageSpeed">Velocidade média (em km/h):</label><br>
+                <input type="number" id="averageSpeed" required>
+            </div>
+
+            <button type="button" onclick="calculateTravelTime()">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
